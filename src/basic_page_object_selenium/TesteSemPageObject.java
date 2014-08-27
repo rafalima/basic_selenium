@@ -13,13 +13,13 @@ public class TesteSemPageObject extends Driver {
 	public void criarNovoProduto() {
 		String mensagemEsperada = "Product was successfully created.";
 		driver.get(adminUrl);
-		waitForElement(By.linkText("Products")).click();
-		waitForElement(By.linkText("New Product")).click();
-		waitForElement(By.id("product_title")).sendKeys("Rafael");
-		waitForElement(By.id("product_price")).sendKeys("10.0");
-		waitForElement(By.id("product_image_file_name")).sendKeys("darkside.jpg");
-		waitForElement(By.id("product_submit")).click();	
-		String mensagemAchada = waitForElement(By.className("flash_notice")).getText();
+		driver.findElement(By.linkText("Products")).click();
+		driver.findElement(By.linkText("New Product")).click();
+		driver.findElement(By.id("product_title")).sendKeys("Rafael");
+		driver.findElement(By.id("product_price")).sendKeys("10.0");
+		driver.findElement(By.id("product_image_file_name")).sendKeys("darkside.jpg");
+		driver.findElement(By.id("product_submit")).click();	
+		String mensagemAchada = driver.findElement(By.className("flash_notice")).getText();
 		assertEquals(mensagemEsperada,mensagemAchada);
 		
 	}
@@ -28,12 +28,13 @@ public class TesteSemPageObject extends Driver {
 	public void criarNovoProdutoSemCamposObrigatorios() {
 		String mensagemEsperada = "Can't Be Blank";
 		driver.get(adminUrl);
-		waitForElement(By.linkText("Products")).click();
-		waitForElement(By.linkText("New Product")).click();
-		waitForElement(By.id("product_title")).sendKeys("Rafael");
-		waitForElement(By.id("product_price")).sendKeys("10.0");
-		waitForElement(By.id("product_submit")).click();	
 		String mensagemAchada = waitForElement(By.className("inline-errors")).getText();
+		driver.findElement(By.linkText("Products")).click();
+		driver.findElement(By.linkText("New Product")).click();
+		driver.findElement(By.id("product_title")).sendKeys("Rafael");
+		driver.findElement(By.id("product_price")).sendKeys("10.0");
+		driver.findElement(By.id("product_submit")).click();	
+		String mensagemAchada = driver.findElement(By.className("inline-errors")).getText();
 		assertEquals(mensagemEsperada,mensagemAchada);		
 	}
 

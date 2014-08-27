@@ -16,20 +16,15 @@ public class Driver {
 	public String adminUrl = "http://localhost:3000/admin";
 
 	@Before
-	public void setUp() throws Exception {
-		System.out.println("driver setup");
+	public void setUp() throws Exception {		
 		driver = new FirefoxDriver();
+		driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_TIME, TimeUnit.SECONDS);
 	}
 
 	@After
 	public void tearDown() throws Exception {
 		driver.quit();
 	}
-	
-	public WebElement waitForElement(By by) {
-		return (new WebDriverWait(driver,DEFAULT_WAIT_TIME).until(ExpectedConditions.presenceOfElementLocated(by)));
-	}
-	
-	
+
 	
 }
