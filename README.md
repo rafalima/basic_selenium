@@ -1,6 +1,6 @@
 <h3>Slides</h3>
 
-<a target="_BLANK" href="http://www.slideshare.net/rafalima07/apresentacao-qa-night-agosto">Link para a apresentaÃÃo</a>
+<a target="_BLANK" href="http://www.slideshare.net/rafalima07/apresentacao-qa-night-agosto">Link para a apresentaÃ§Ã£o</a>
 
 <h3>Para usar o projeto:</h3>
 
