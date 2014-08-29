@@ -1,6 +1,6 @@
 <h3>Slides</h3>
 
-<a target="_BLANK" href="www.slideshare.net/taisedias/cucumber-qanight">Link para slides sobre Cucumber</a>
+<a target="_BLANK" href="http://www.slideshare.net/rafalima07/apresentacao-qa-night-agosto">Link para a apresentaÃÃo</a>
 
 <h3>Para usar o projeto:</h3>
 
