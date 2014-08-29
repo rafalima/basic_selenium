@@ -1,4 +1,4 @@
-package basic_page_object_selenium;
+package codigoFeitoNoQaNight;
 
 import org.junit.After;
 import org.junit.Before;

@@ -1,9 +1,11 @@
-package basic_page_object_selenium;
+package codigoExemplo;
 
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import codigoFeitoNoQaNight.Driver;
 
 public class TestComPageObject extends Driver {
 	

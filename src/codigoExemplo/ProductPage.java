@@ -1,4 +1,4 @@
-package basic_page_object_selenium;
+package codigoExemplo;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
